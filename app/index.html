@@ -3,11 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>home</title>
+	<!-- outer style -->
+	<link rel="stylesheet" href="./components/angular-material/angular-material.css">
 </head>
 <body>
+
 	<h1 ng-bind="title"></h1>
-	<!-- components -->
+	
+	<div layout="row">
+		<div flex="">flex #1</div>
+		<div flex="">
+			<md-button class="md-fab md-primary md-hue-2"></md-button>
+		</div>
+		<div flex="">flex #3</div>
+	</div>
+
+	<!-- core components-->
 	<script src="./components/angular/angular.js"></script>
+
+	<!-- official components -->
+	<script src="./components/angular-animate/angular-animate.js"></script>
+	<script src="./components/angular-aria/angular-aria.js"></script>
+
+	<!-- vendor components-->
+	<script src="./components/angular-material/angular-material.js"></script>
 
 	<!-- scripts -->
 	<script src="./scripts/home.js"></script>
