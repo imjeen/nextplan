@@ -1,0 +1,17 @@
+{
+  "name": "planA",
+  "version": "0.0.0",
+  "description": "personal",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/components/"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
