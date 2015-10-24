@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-cn" ng-app="homeApp" ng-controller="homeCtrl">
+<html lang="zh-cn" ng-app="app" ng-controller="AppCtrl">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1 user-scalable=0">
-	<title>home</title>
+	<title>index</title>
 	<!-- outer style -->
 	<link rel="stylesheet" href="./components/normalize.css/normalize.css">
 	<link rel="stylesheet" href="./components/angular-material/angular-material.css">
@@ -16,8 +16,8 @@
 	<header ng-include="'./views/partials/header.html'"></header>
 	<nav ng-include="'./views/partials/nav.html'"></nav>
 	<!-- main -->
-	<md-content>
-
+	<md-content layout="column">
+	 <main ng-include="'./views/home/home.html'" scope="" onload=""></main>
 	</md-content>
 	<!-- footer -->
 	<footer ng-include="'./views/partials/footer.html'"></footer>
@@ -33,6 +33,7 @@
 	<script src="./components/angular-material/angular-material.js"></script>
 
 	<!-- scripts -->
-	<script src="./scripts/home.js"></script>
+	<script src="./scripts/app.js"></script>
+	<script src="./scripts/home/home.js"></script>
 </body>
 </html>
