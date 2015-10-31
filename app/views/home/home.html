@@ -17,18 +17,51 @@
 <!-- message list -->
 <div layout="row" layout-align="center" layout-padding>
 	<div flex="80" flex-sm="100">
-	<md-content>
-		<md-list>
+		<md-content layout-padding>
+
+			<md-subheader class="md-no-sticky">3 line item, long paragraph (see on mobile)</md-subheader>
 			<md-list-item class="md-3-line">
-				<div class="md-list-item-text">
-					<h3>Brunch this weekend?</h3>
-					<h4>Min Li Chan</h4>
+				<img ng-src="" class="md-avatar" alt="">
+				<div class="md-list-item-text" layout="column">
+					<h3>Min Li Chan</h3>
+					<h4>Brunch this weekend?</h4>
 					<p>I'll be in your neighborhood doing errands</p>
 				</div>
-				<md-button class="md-secondary">Respond</md-button>
-				<md-divider ng-if="true"></md-divider>
-			</md-list-item>
-		</md-list>
-	</md-content>
+		  </md-list-item>
+
+		  <md-divider ></md-divider>
+
+		  <md-subheader class="md-no-sticky">2 line item</md-subheader>
+			<md-list-item class="md-2-line">
+				<img ng-src="" class="md-avatar" alt="">
+				<div class="md-list-item-text" layout="column">
+					<h3>Min Li Chan</h3>
+					<p>I'll be in your neighborhood doing errands</p>
+				</div>
+		  </md-list-item>
+
+		  <md-divider></md-divider>
+
+		  <md-subheader class="md-no-sticky">3 line item, long paragraph (see on mobile)</md-subheader>
+		  <md-list-item class="md-3-line md-long-text">
+		  	<img ng-src="" alt="" class="md-avatar">
+				<div class="md-list-item-text">
+					<h3>Min Li Chan</h3>
+					<p>Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litra torquent per conubia nostra, per inceptos himenaeos.</p>
+				</div>
+		  </md-list-item>
+
+		  <md-divider></md-divider>
+
+		  <md-subheader class="md-no-sticky">classes</md-subheader>
+		  <md-list-item class="md-3-line">
+				<md-icon></md-icon>
+				<div class="md-list-item-text">
+					<h3>(555) 251-1234</h3>
+					<p>Home</p>
+				</div>
+		  </md-list-item>
+
+		</md-content>
 	</div>
 </div>
