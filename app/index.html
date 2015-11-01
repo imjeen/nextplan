@@ -9,16 +9,21 @@
 	<!-- outer style -->
 	<link rel="stylesheet" href="./components/normalize.css/normalize.css">
 	<link rel="stylesheet" href="./components/angular-material/angular-material.css">
-	<link rel="stylesheet" href="./components/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+	<link rel="stylesheet" href="./components/angular-material-icons/angular-material-icons.css">
+	<!-- costum style -->
+	<link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
 	<!-- header -->
-	<header ng-include="'./views/partials/header.html'"></header>
-	<nav ng-include="'./views/partials/nav.html'"></nav>
-	<!-- main -->
-	<md-content layout="column">
-	 <main ng-include="'./views/home/home.html'" scope="" onload=""></main>
-	</md-content>
+	<header id="header" ng-include="'./views/partials/header.html'"></header>
+	<aside id="sidebar" ng-include="'./views/partials/sidenav.html'"></aside>
+	<article>
+		<nav ng-include="'./views/partials/nav.html'"></nav>
+		<!-- main -->
+		<md-content layout="column">
+		 <main ng-include="'./views/home/home.html'"></main>
+		</md-content>
+	</article>
 	<!-- footer -->
 	<footer ng-include="'./views/partials/footer.html'"></footer>
 
@@ -31,6 +36,7 @@
 
 	<!-- vendor components-->
 	<script src="./components/angular-material/angular-material.js"></script>
+	<script src="./components/angular-material-icons/angular-material-icons.min.js"></script>
 
 	<!-- scripts -->
 	<script src="./scripts/app.js"></script>
